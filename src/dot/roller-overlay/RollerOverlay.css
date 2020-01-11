@@ -1,0 +1,41 @@
+.pcsDotRollerOverLay{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+}
+
+.pcsDot{
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: calc(50% - 5px);
+    border-radius: 50%;
+    background-color: var(--main-color);
+    transform-origin: 5px 30px;
+    animation: rotate;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(359deg);
+    }
+}
+.pcsD2{
+    animation-delay: 0.1s;
+}
+.pcsD3{
+    animation-delay: 0.2s;
+}
+.pcsD4{
+    animation-delay: 0.3s;
+}
+.pcsD5{
+    animation-delay: 0.4s;
+}
