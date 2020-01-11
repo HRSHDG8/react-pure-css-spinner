@@ -1,4 +1,4 @@
-.nest {
+.pcsNestSpinner {
     display: inline-block;
     height: 50px;
     width: 50px;
@@ -9,7 +9,7 @@
             animation: spin7 1.5s ease infinite;
   }
   
-  .nest:before {
+  .pcsNestSpinner:before {
     content: "";
     position: absolute;
     top: 7px;
@@ -23,7 +23,7 @@
             animation: spin7 3s linear infinite;
   }
   
-  .nest:after {
+  .pcsNestSpinner:after {
     content: "";
     position: absolute;
     top: 15px;

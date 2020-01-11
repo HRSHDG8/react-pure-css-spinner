@@ -1,9 +1,9 @@
-.yy-container{
+.yyContainer{
     height: 49px;
     width: 50px;
     display: inline-block;
 }
-.pcs-ying-yang-spinner{
+.pcsYingYangSpinner{
     position: relative;
     background: #fff;
     height: 49px;
@@ -18,7 +18,7 @@
     -o-animation: rotating 3s linear infinite;
     animation: rotating 3s linear infinite;
 }
-.pcs-ying-yang-spinner:before{
+.pcsYingYangSpinner:before{
     content: '';
     position: absolute;
     top:-1px;
@@ -29,7 +29,7 @@
     width: 7px;
     height: 7px;
 }
-.pcs-ying-yang-spinner:after{
+.pcsYingYangSpinner:after{
     content: '';
     position: absolute;
     top:calc(50% - 1px);

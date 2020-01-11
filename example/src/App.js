@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 
-import ExampleComponent from 'react-pure-css-spinner'
-
+import Spinner, { SpinnerType } from 'react-pure-css-spinner';
+import Comp from './Comp';
 export default class App extends Component {
   render () {
     return (
       <div>
-        <ExampleComponent text='Modern React component module' />
+        <Comp/>
       </div>
     )
   }
