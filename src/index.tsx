@@ -10,6 +10,11 @@ import DotRollerOverlay from './dot/roller-overlay/RollerOverlay';
 import Wave from './dot/wave/Wave';
 import Pulse from './dot/pulse/Pulse';
 import Oscillation from './dot/oscillation/Oscillation';
+import SingleCirclePulse from './circle/pulse/single/SingleCirclePulse';
+import MultipleCirclePulse from './circle/pulse/multiple/MultipleCirclePulse';
+import SingleCircleFade from './circle/fade/single/SingleCircleFade';
+import MultipleCircleFade from './circle/fade/multiple/MultipleCircleFade';
+import Classic from './classic/Classic';
 export * from './spinner.type';
 export type Props = { color?: string, type?: SpinnerType }
 function ReactCssSpinner(props: Props) {
@@ -36,6 +41,16 @@ function ReactCssSpinner(props: Props) {
       return <NestSpinner color={color} />
     case SpinnerType.SimpleBar:
       return <SimpleBar color={color} />
+    case SpinnerType.SingleCirclePulse:
+      return <SingleCirclePulse color={color} />
+    case SpinnerType.MultipleCirclePulse:
+      return <MultipleCirclePulse color={color} />
+    case SpinnerType.SingleCircleFade:
+      return <SingleCircleFade color={color} />
+    case SpinnerType.MultipleCircleFade:
+      return <MultipleCircleFade color={color} />
+    case SpinnerType.Classic:
+      return <Classic color={color} />
     default:
       return <Default color={color} />;
   }

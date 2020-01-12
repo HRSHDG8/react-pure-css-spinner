@@ -1,11 +1,16 @@
 export enum SpinnerType {
-    YingYang, 
-    DotRoller, 
-    DotDefault, 
-    DotRollerOverlay, 
-    DotWave, 
-    DotPulse, 
+    YingYang,
+    DotRoller,
+    DotDefault,
+    DotRollerOverlay,
+    DotWave,
+    DotPulse,
     DotOscillate,
-    NestSpinner, 
-    SimpleBar
+    NestSpinner,
+    SimpleBar,
+    SingleCirclePulse,
+    MultipleCirclePulse,
+    SingleCircleFade,
+    MultipleCircleFade,
+    Classic
 }

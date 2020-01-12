@@ -1,0 +1,21 @@
+.loader {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.loader-name {
+    text-align: center;
+    height: 50px;
+}
+
+.loader-content {
+    height: 100px;
+    text-align: center;
+}
+
+.loader-container {
+    border-collapse: collapse;
+}
