@@ -10,17 +10,50 @@
 npm install --save react-pure-css-spinner
 ```
 
-## Usage
+# Usage
+
+## Basic
+```tsx
+import * as React from 'react'
+
+import Spinner, { SpinnerType } from 'react-pure-css-spinner';
+
+class App extends React.Component {
+  render () {
+    return (
+      <Spinner />
+    )
+  }
+}
+```
+## Passing Props
+<h3>The component takes in two props type and color</h3>
+<u>Type</u> :<ul>
+<li> Optional paramter, defaults to Default Spinner
+<li> Used to change type of loader
+<li> pass and paramter from SpinnerType as type={SpinnerType.Classic}
+</ul>
+
+<u>Color</u> :
+<ul>
+<li> Optional paramter, defaults to black color
+<li> Used to change color of loader
+<li> pass any valid html color string paramter as <ul>
+<li>color="black"
+<li> color="rgb(0,0,0)"
+<li> color="rgba(0,0,0,1)"
+</ul>
+</ul>
 
 ```tsx
 import * as React from 'react'
 
-import MyComponent from 'react-pure-css-spinner'
+import Spinner, { SpinnerType } from 'react-pure-css-spinner';
 
-class Example extends React.Component {
+class App extends React.Component {
   render () {
     return (
-      <MyComponent />
+      <Spinner type={SpinnerType.SingleCirclePulse} color="rgba(128,0,128,1)" />
     )
   }
 }
